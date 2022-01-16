@@ -184,8 +184,7 @@ class MyHomePage extends StatelessWidget {
                       double approx_weight = 0.03 * weight;
                       double approx_price = 0.03 * price;
 
-                      //double weightMax = (0.03 * weight)+weight;
-                      //double PriceMax = (0.03 * price)+price;
+                    
                       double weightMin = weight - (0.03 * weight);
                       double PriceMin = price - (0.03 * price);
                       showDialog(
