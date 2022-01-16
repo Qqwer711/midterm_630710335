@@ -185,8 +185,8 @@ class MyHomePage extends StatelessWidget {
                       double approx_price = 0.03 * price;
 
                     
-                      double weightMin = weight - (0.03 * weight);
-                      double PriceMin = price - (0.03 * price);
+                      double wMin = weight - (0.03 * weight);
+                      double pMin = price - (0.03 * price);
                       showDialog(
                         context: context,
                         builder: (BuildContext context) {
@@ -197,7 +197,7 @@ class MyHomePage extends StatelessWidget {
            ],
                             ),
                             content: Text(
-                                'Weight: ${weightMin.round()} - ${approx_weight.round()} kg\nPrice: ${PriceMin.round()} - ${approx_price.round()} Baht'),
+                                'Weight: ${wMin.round()} - ${approx_weight.round()} kg\nPrice: ${pMin.round()} - ${approx_price.round()} Baht'),
                             actions: [
                               TextButton(
                                 child: const Text('OK'),
